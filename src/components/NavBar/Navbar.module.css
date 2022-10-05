@@ -1,0 +1,49 @@
+.divGlobal{
+    display: grid;
+    grid-template-columns: 36% 39% 25%;
+    background-color: #252525;
+    box-shadow: 5px 3px 20px 0px #252525;
+    width: 100vw;
+}
+.divImg{
+    display: flex;
+    margin: 0px 0px 0px 20px;
+    align-items: center;
+}
+.name{
+    display: flex;
+    margin-left: 10px;
+    color: white;
+}
+.buscador{
+    display: flex;
+    align-items: center;
+
+}
+.navList{
+    display: grid;
+    grid-template-columns: 40% 55%;
+    list-style-type: none;
+}
+.navItem {
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    padding: 15px 15px 23px 10px;
+    transition-property: background-color, color;
+    transition-duration: 500ms;
+   
+}
+
+.navItem:hover{
+    background-color: white;
+    color: black;
+}
+.list{
+    display: flex;
+    align-items: center;
+}
+.item{
+    display: flex;
+    margin-right: 8px;
+}

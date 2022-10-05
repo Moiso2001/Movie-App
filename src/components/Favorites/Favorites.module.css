@@ -1,0 +1,13 @@
+
+.divCards{
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	width: 80%;
+	margin: 0 auto;
+	padding-left: 110px;
+}
+
+.title{
+    display: flex;
+	justify-content: center;
+}

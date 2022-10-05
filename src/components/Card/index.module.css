@@ -1,0 +1,46 @@
+.divCard{
+	background-color: #252525;
+	display: flexbox;
+	width: 250px;
+	height: 460px;
+	overflow: hidden;
+	margin: 30px;
+	color: whitesmoke;
+	transition: box-shadow 200ms;
+}
+
+.divCard:hover{
+	box-shadow: 5px 3px 10px 0px #252525;
+}
+
+.divButton{
+	position: absolute;
+	margin: 5px 0px 0px 5px;
+}
+
+.button{
+	width: 30px;
+	height: 30px;
+	transition: color 100ms;
+}
+
+.button:hover{
+	color: rgb(215, 10, 10)
+}
+
+.divImg{
+	display: flex;
+	width: 250px;
+	height: 330px;
+	overflow: hidden;
+}
+
+.img{
+	width: 250px;
+	height: 330px;
+}
+
+.divFoot{
+	display: flexbox;
+	margin-left: 10px;
+}

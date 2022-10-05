@@ -1,0 +1,8 @@
+.divGlobal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Loading{
+    font-size: 30px;
+}

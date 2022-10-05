@@ -1,0 +1,30 @@
+.formContainer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: -5px;
+}
+.divInput{
+    display: flex;
+    align-items: center;
+}
+.input{
+    display: flex;
+    padding-left: 10px;
+    background-color: white;
+    font-size: 20px;
+    width: 400px;
+    height: 30px;
+    color:black;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+}
+.divButton{
+    display: flex;
+}
+.button{
+    background-color: #BFD7EA;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 100%;
+}
