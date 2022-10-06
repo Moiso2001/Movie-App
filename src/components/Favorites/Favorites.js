@@ -1,8 +1,5 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-// import { connect } from "react-redux";
-// import { Link } from 'react-router-dom';
-import { removeMovieFavorite } from "../../actions";
 import Card from "../Card";
 
 import styles from './Favorites.module.css'
@@ -19,11 +16,11 @@ export class ConnectedList extends Component {
         <div className={styles.divCards}>
         
           {this.props.favoriteMovies.length > 0 ? this.props.favoriteMovies.map((movie) => 
-          <Card
-            id={movie[0].imdbID}
-            key={movie[0].imdbID}
+          <Card                                                                                    // As we saw in Card documentation, here isn't being
+            id={movie[0].imdbID}                                                                   // pass any type, that means all of this cards will be rendered  with
+            key={movie[0].imdbID}                                                                  // delet icon and method,
             title={movie[0].Title}
-            img={movie[0].Poster}
+            img={movie[0].Poster}                                                                 
           />): null}
       
         </div>
@@ -34,14 +31,8 @@ export class ConnectedList extends Component {
 
 const mapStateToProps = (state) => {
   return{
-    favoriteMovies: state.favoriteMovies
-  }
+    favoriteMovies: state.favoriteMovies                                            // We bring Favorite Component with the favoriteMovies(redux-state) this will be the 
+  }                                                                                 // array maped with the movies selected before when the user clicked on the Heart/Fav Icon
 }
 
-const mapDispatchToProps = (dispatch) => {
-  return{
-    removeMovieFavorite: (id) => dispatch(removeMovieFavorite(id))
-  }
-}
-
-export default connect(mapStateToProps,mapDispatchToProps)(ConnectedList);
+export default connect(mapStateToProps)(ConnectedList);

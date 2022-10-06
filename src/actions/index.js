@@ -16,34 +16,34 @@ export const getMovies = function(title){
 
 export const getMoviesDetail = (imdbID) => {
     return function(dispatch){
-        return fetch("https://www.omdbapi.com/?apikey=ac45fe53&&i=" + imdbID)
+        return fetch("https://www.omdbapi.com/?apikey=ac45fe53&&i=" + imdbID)           // Search movie by ID looking for extra details
         .then(response => response.json())
         .then(json => dispatch({type: GET_MOVIE_DETAIL, payload: json}))
     }
 }
 
-export const addMovieFavorite = (id) => {
-    return{
-        type: ADD_MOVIE_FAVORITE,
+export const addMovieFavorite = (id) => {           
+    return{ 
+        type: ADD_MOVIE_FAVORITE,                                                      // Reducer handle functionality
         payload: id,
     };
 }
 
 export const removeMovieFavorite = (id) => {
-    return{
+    return{                                                                           // Reducer handle functionality
         type: REMOVE_MOVIE_FAVORITE,
         payload: id
     }
 }
 
 export const clearDetailMovie = () => {
-    return {
+    return {                                                                        // Reducer handle functionality
         type: CLEAR_DETAIL_MOVIE,
     }
 }
 
 export const clearMovieList = () => {
-    return{
+    return{                                                                         // Reducer handle functionality
         type: CLEAR_MOVIE_LIST,
     }
 }
